@@ -1,35 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TON CONNECT WALLET</title>
-  </head>
-<style>
-  body{
-    width: 100%;
-    height: 100vh;
-    background: #000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    grid-area: 4em;
-    justify-content: center;
-    overflow: hidden;
-  }
-  button{
-    width: 200px;
-    height: 50px;
-    border-radius: 5px;
-    p{
-      color: #fff;
-    }
-  }
-</style>
-  <body>
-    <button onclick="connectWallet()">CONNECT WALLET</button>
-  </body>
-  <script src="https://unpkg.com/@tonconnect/sdk@latest/dist/tonconnect-sdk.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+         <!-- Placeholder for Image -->
+         <div class="image-placeholder">
+          <img src="placeholder.png" alt="Placeholder Image">
+      </div>
+
+        <!-- Main Message -->
+        <div class="main-message">
+            <h2>Ready to play?<br>Connect your wallet and dive in!</h2>
+        </div>
+
+        <!-- Connect Wallet Button -->
+        <div class="connect-wallet">
+            <button id="connect-wallet-btn" onclick="connectWallet()">Connect Wallet</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/@tonconnect/sdk@latest/dist/tonconnect-sdk.min.js"></script>
   <script>
     const connector = new TonConnectSDK.TonConnect({
       manifestUrl:
@@ -74,7 +68,6 @@
     });
   </script>
 </html>
-
 <!-- 
   <script src="https://unpkg.com/@tonconnect/sdk@latest/dist/tonconnect-sdk.min.js"></script>
   <script>
